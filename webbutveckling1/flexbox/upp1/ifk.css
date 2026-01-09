@@ -1,0 +1,80 @@
+header{
+background-color: aqua;
+height: 270px;
+width: 70%;
+}
+
+nav{
+background-color: blue;
+height: 270px; 
+width: 30%;
+margin-left: 90px;
+}
+
+
+#container1{
+
+display: flex;
+
+}
+
+main{
+background-color: rgb(255, 111, 0);
+height: 200px;
+width: 100%;
+margin-top: 17px;
+}
+
+
+footer{
+background-color: darkgreen;
+height: 270px;
+width: 125%;
+margin-top: 20px;
+
+}
+
+aside{
+background-color: rgb(255, 0, 136);
+height: 270px;
+width: 54%;
+margin-left: 130px;
+margin-top: 20px;
+}
+
+#container2{
+
+display: flex;
+
+}
+
+
+@media screen and (max-width: 500px){
+
+#container1{
+
+flex-direction: column;
+header{
+    width: 200%;
+}
+nav{
+    width: 200%;
+    margin-left: 0px;
+}
+
+}
+
+#container2{
+
+flex-direction: column;
+aside{
+    width: 200%;
+    margin-left: 0px;
+}
+
+}
+
+
+
+}
+

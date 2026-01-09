@@ -1,0 +1,72 @@
+body{
+
+    height: 100vh;
+}
+
+header{
+grid-area: h;
+background-color: blue;
+}
+main{
+grid-area: m;
+background-color: pink;
+}
+aside{
+grid-area: a;
+background-color: darkgreen;
+}
+footer{
+grid-area: f;
+background-color: red;
+}
+nav{
+grid-area: n;
+background-color: chartreuse;
+}
+
+
+
+
+
+
+
+#container{
+display: grid;
+height: 100%;
+grid-template-columns:10% 35% 35% 10% 10%;
+grid-template-rows: 20% 20% 20% 20% 20%;
+
+grid-template-areas: 
+
+
+". h h h . "
+"a . a . a"
+"f . f . f"
+"m . m . m"
+"n . n . n"
+
+
+
+}
+
+@media screen and ( max-width:600px){
+
+
+    #container{
+grid-template-rows: 100% 100% 100% 100% 100%;
+
+
+        grid-template-areas: 
+
+
+". h h h ."
+"m . m . m"
+"a . a . a"
+"f . f . f"
+"n . n . n"
+
+
+
+    }
+}
+    
