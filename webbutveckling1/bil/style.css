@@ -64,4 +64,11 @@ grid-template-rows: 75% 75% 50% 75% 75%;
 
     }
 }
-    
+     .responsive{
+            width: 100%;
+            height: auto;
+        }
+        main{
+            width: 70%;
+            
+        }
