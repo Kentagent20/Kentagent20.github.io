@@ -33,13 +33,13 @@ background-color: darkmagenta;
 display: grid;
 height: 100%;
 grid-template-columns:75% 25%;
-grid-template-rows: 20% 90% 20% 50% ;
+grid-template-rows: 20% 90% 20% 70% ;
 gap: 30px;
 
 grid-template-areas: 
 
 
-"h m"s
+"h m"
 "a s"
 "f n"
 ;
@@ -76,7 +76,10 @@ grid-template-rows: 75% 75% 50% 75% 75%;
          }
  
    
-
+.responsive{
+width: 100%;
+height: auto;
+}
 
 
 
