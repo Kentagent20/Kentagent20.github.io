@@ -23,21 +23,24 @@ nav{
 grid-area: n;
 background-color: yellow;
 }
-
+section{
+grid-area: s;
+background-color: darkmagenta;
+}
 
 
 #container{
 display: grid;
 height: 100%;
 grid-template-columns:75% 25%;
-grid-template-rows: 20% 50% 20% 50% ;
+grid-template-rows: 20% 90% 20% 50% ;
 gap: 30px;
 
 grid-template-areas: 
 
 
-"h m"
-"a a"
+"h m"s
+"a s"
 "f n"
 ;
 
@@ -70,5 +73,10 @@ grid-template-rows: 75% 75% 50% 75% 75%;
         }
         main{
             width: 70%;
-            
-        }
+         }
+ 
+   
+
+
+
+
