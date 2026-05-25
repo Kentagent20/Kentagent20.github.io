@@ -1,0 +1,74 @@
+body{
+width: 100vw;
+background-image: url(ifk.png);
+background-size: cover;
+    height: 100vh;
+}
+
+header{
+    grid-area: h;
+    background-color: wheat;
+    opacity: 0.5;
+    font-size: 35px;
+    padding: 50px;
+}
+main{
+    grid-area: m;
+    background-color: wheat;
+    opacity: 0.5;
+    font-size: 20px;
+}
+aside{
+    grid-area: a;
+    background-color: wheat;
+    opacity: 0.5;
+    font-size: 20px;
+}
+footer{
+    grid-area: f;
+    background-color: wheat;
+    opacity: 0.5;
+    font-size: 20px;
+}
+nav{
+    grid-area:na;
+    background-color: wheat;
+    opacity: 0.5;
+    font-size: 20px;
+}
+article{
+    grid-area:ar;
+    background-color:wheat;
+    opacity: 0.5;
+    font-size: 20px;
+    padding: 20px;
+}
+#container{
+    display: grid;
+    height:100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows:20% 20% 20% 20% 20%;
+
+    grid-template-areas:
+    
+    ". . h . ." 
+    "m m . a a"
+    "f f . na na"
+    ". . ar . ."
+    ". . ar . .";
+}
+
+@media screen and (max-width:800px){
+
+#container{
+
+    grid-template-rows:100% 100% 100% 100% 100%;
+
+    grid-template-areas:  
+    "h h h"
+    "m m m"
+    "a a a"
+    "f f f"
+    "f f f";
+}
+}
